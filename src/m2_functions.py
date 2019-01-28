@@ -20,6 +20,11 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 import rosegraphics as rg
 #import math
 
+def main():
+    result = pythagoras(5, 3)
+    print(result)
+    turtle()
+
 #def pythagoras(a,b):
   #  value = math.sqrt((a**2)+(b**2))
   #  return value
@@ -52,8 +57,6 @@ def pythagoras(a,b):
     value = math.sqrt((a**2)+(b**2))
     return value
 
-result = pythagoras(5,3)
-print(result)
 
 ###############################################################################
 # DONE: 4a.  Define a function immediately below this _TODO_.
@@ -82,16 +85,18 @@ print(result)
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
-window=rg.TurtleWindow()
-simple_turtle1 = rg.SimpleTurtle('turtle')
-simple_turtle1.pen.color = 'green'
-simple_turtle2 = rg.SimpleTurtle('turtle')
-simple_turtle2.pen = rg.Pen('blue', 5)
+def turtle():
+    window=rg.TurtleWindow()
+    simple_turtle1 = rg.SimpleTurtle('turtle')
+    simple_turtle1.pen.color = 'green'
+    simple_turtle2 = rg.SimpleTurtle('turtle')
+    simple_turtle2.pen.thickness = 5
 
-simple_turtle1.forward(100)
-simple_turtle2.backward(100)
+    simple_turtle1.forward(100)
+    simple_turtle2.backward(100)
 
-window.close_on_mouse_click()
+    window.close_on_mouse_click()
+    return
 
 ###############################################################################
 # DONE: 5.
