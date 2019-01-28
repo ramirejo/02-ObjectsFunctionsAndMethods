@@ -42,7 +42,7 @@ import rosegraphics as rg
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 3b.  In main, CALL your function and print the returned value,
+# DONE: 3b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
@@ -52,11 +52,11 @@ def pythagoras(a,b):
     value = math.sqrt((a**2)+(b**2))
     return value
 
-#result = pythagoras(5,3)
-#print(result)
+result = pythagoras(5,3)
+print(result)
 
 ###############################################################################
-# TODO: 4a.  Define a function immediately below this _TODO_.
+# DONE: 4a.  Define a function immediately below this _TODO_.
 #   It takes two arguments:
 #     -- a string that represents a color (e.g. 'red')
 #     -- a positive integer that represents the thickness of a Pen.
@@ -78,14 +78,23 @@ def pythagoras(a,b):
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function at least TWICE (with different values
+# Done: 4b.  In main, CALL your function at least TWICE (with different values
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
+window=rg.TurtleWindow()
+simple_turtle1 = rg.SimpleTurtle('turtle')
+simple_turtle1.pen.color = 'green'
+simple_turtle2 = rg.SimpleTurtle('turtle')
+simple_turtle2.pen = rg.Pen('blue', 5)
 
+simple_turtle1.forward(100)
+simple_turtle2.backward(100)
+
+window.close_on_mouse_click()
 
 ###############################################################################
-# TODO: 5.
+# DONE: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
