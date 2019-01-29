@@ -23,7 +23,8 @@ import rosegraphics as rg
 def main():
     result = pythagoras(5, 3)
     print(result)
-    turtle()
+    turtle('red', 5)
+    turtle('blue', 12)
 
 #def pythagoras(a,b):
   #  value = math.sqrt((a**2)+(b**2))
@@ -85,12 +86,12 @@ def pythagoras(a,b):
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
-def turtle():
+def turtle(color, thickness):
     window=rg.TurtleWindow()
     simple_turtle1 = rg.SimpleTurtle('turtle')
-    simple_turtle1.pen.color = 'green'
+    simple_turtle1.pen.color = color
     simple_turtle2 = rg.SimpleTurtle('turtle')
-    simple_turtle2.pen.thickness = 5
+    simple_turtle2.pen.thickness = thickness
 
     simple_turtle1.forward(100)
     simple_turtle2.backward(100)
