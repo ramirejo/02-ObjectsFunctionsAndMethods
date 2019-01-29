@@ -64,7 +64,7 @@ def turtle_fun():
     z=(3*(47+16))
     alan.backward(z)
     alan.begin_fill()
-    #alan.circle(25)
+    alan.draw_circle(25)
     alan.end_fill()
 
     alan.forward(200)
